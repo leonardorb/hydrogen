@@ -12,8 +12,11 @@
     "nwjs",
     "webpack",
     "react",
+    "react-router"
     "redux",
-    "bootstrap"
+    "nedb",
+    "bootstrap",
+    "font-awesome"
   ],
   "author": "Leonardo R. Barbosa",
   "license": "MIT",
