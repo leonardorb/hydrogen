@@ -29,8 +29,8 @@ Edit your tests, save! Live test reload! :metal:
 It's very simple!
 
 1. [Download the latest SDK build](http://nwjs.io/)
-2. Unpack it in the root of the project;
-3. Double-click in the `.app`/`.exe`; BOOM!
+2. Unpack it in the root of the project
+3. Double-click in the `.app` / `.exe`; **BOOM**!
 
 
 ## Contributors
