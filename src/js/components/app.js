@@ -5,7 +5,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="hydrogen-blue">
-        <i className='fa lala fa-globe'></i> Hello World.
+        <i className='fa fa-globe'></i> Hello World.
       </div>
     )
   }

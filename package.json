@@ -12,7 +12,7 @@
     "nwjs",
     "webpack",
     "react",
-    "react-router"
+    "react-router",
     "redux",
     "nedb",
     "bootstrap",

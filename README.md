@@ -1,5 +1,7 @@
 # :white_circle: Hydrogen
 
+[![Build Status](https://travis-ci.org/leonardorb/hydrogen.svg?branch=master)](https://travis-ci.org/leonardorb/hydrogen)
+
 An opinionated package for awesomeness. Standing in the shoulder of giants! Easily bootstrap your **React** projects.
 
 - [Webpack](https://webpack.github.io/)
