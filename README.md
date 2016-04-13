@@ -1,4 +1,4 @@
-# :hammer_and_wrench: Hydrogen
+# :white_circle: Hydrogen
 
 An opinionated package for awesomeness. Standing in the shoulder of giants! Easily bootstrap your projects.
 
