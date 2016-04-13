@@ -1,6 +1,6 @@
 # :white_circle: Hydrogen
 
-An opinionated package for awesomeness. Standing in the shoulder of giants! Easily bootstrap your projects.
+An opinionated package for awesomeness. Standing in the shoulder of giants! Easily bootstrap your **React** projects.
 
 - [Webpack](https://webpack.github.io/)
 - [React](https://facebook.github.io/react/)
