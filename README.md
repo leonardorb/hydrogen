@@ -12,8 +12,8 @@ An opinionated package for awesomeness. Standing in the shoulder of giants! Easi
 
 ## How to use
 
-1. Clone it;
-2. `npm install` to install all dependencies;
+1. Clone it
+2. `npm install` to install all dependencies
 3. `npm start`
 4. Go to `http://localhost:8080`; Enjoy!
 5. Edit your files, save! Live reload! :metal:
@@ -23,6 +23,14 @@ An opinionated package for awesomeness. Standing in the shoulder of giants! Easi
 `npm run test:watch`
 
 Edit your tests, save! Live test reload! :metal:
+
+## Use with `nwjs`
+
+It's very simple!
+
+1. [Download the latest SDK build](http://nwjs.io/)
+2. Unpack it in the root of the project;
+3. Double-click in the `.app`/`.exe`; BOOM!
 
 
 ## Contributors
