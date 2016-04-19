@@ -1,28 +1,46 @@
-// main: 'index.html' when going to production
-// webpack --progress -p
-
 const webpack = require('webpack')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  
+  assets: {
+    stats: {
+      colors: true
+    }
+  },
+  
+  context: __dirname,
+  
   devtool: 'cheap-module-source-map',
+  
   entry: [
     'font-awesome-loader',
     'bootstrap-loader',
-    'webpack-dev-server/client?http://localhost:8080',
-    './src/js/app.js'
+    'webpack-hot-middleware/client',
+    './src/js/client/app.js'
   ],
+  
   output: {
-    path: __dirname + '/build',
-    publicPath: '/build',
+    path: path.join(__dirname, '/build'),
+    publicPath: './',
     filename: 'app.js'
   },
+  
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
+    }),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.html')
     })
   ],
+  
   module: {
     loaders: [{
       test: /\.js$/,
@@ -45,11 +63,14 @@ module.exports = {
       loader: 'file'
     }]
   },
+  
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js']
   },
+  
   devServer: {
     historyApiFallback: true,
     contentBase: './'
   }
+
 }
