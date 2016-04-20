@@ -4,43 +4,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   
-  assets: {
-    stats: {
-      colors: true
-    }
-  },
-  
   context: __dirname,
-  
-  devtool: 'cheap-module-source-map',
-  
+
   entry: [
     'font-awesome-loader',
     'bootstrap-loader',
     'webpack-hot-middleware/client',
-    './src/js/client/app.js'
+    '../src/js/client/app.js'
   ],
-  
+
   output: {
     path: path.join(__dirname, '/build'),
     publicPath: './',
     filename: 'app.js'
   },
-  
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'index.html')
-    })
-  ],
-  
+
   module: {
     loaders: [{
       test: /\.js$/,
@@ -63,14 +41,36 @@ module.exports = {
       loader: 'file'
     }]
   },
-  
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, '../index.html')
+    })
+  ],
+
   resolve: {
     extensions: ['', '.js']
   },
   
+  devtool: 'cheap-module-source-map',
+  
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+
+  assets: {
+    stats: {
+      colors: true
+    }
+  },
 
 }

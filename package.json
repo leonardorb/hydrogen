@@ -16,8 +16,8 @@
     "hapi",
     "react",
     "react-router",
+    "react-hot-reload",
     "redux",
-    "nedb",
     "bootstrap",
     "font-awesome"
   ],
@@ -66,7 +66,6 @@
     "joi": "^8.0.5",
     "jquery": "^2.2.3",
     "lodash": "^4.10.0",
-    "nedb": "^1.8.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.4",

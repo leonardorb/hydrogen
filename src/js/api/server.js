@@ -9,7 +9,7 @@ server.connection({
 
 server.register({
   register: WebpackPlugin,
-  options: 'webpack.config.js'
+  options: 'configs/webpack-dev.config.js'
 }, error => {
   if (error) {
     console.log(error)
