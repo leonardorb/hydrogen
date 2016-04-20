@@ -5,11 +5,7 @@
   "main": "http://localhost:8080",
   "scripts": {
     "dev": "node src/js/api/server.js",
-    "devv": "concurrently --kill-others \"npm run watch-server\" \"npm run watch-client\"",
-    "watch-server": "webpack-dev-server --colors --display-error-details --config configs/webpack-watch-server.config.js",
-    "watch-client": "webpack-dev-server --colors --display-error-details --config configs/webpack-watch-client.config.js",
-    "build": "",
-    "production": "webpack --progress -p --config configs/webpack-production.config.js",
+    "production": "webpack --progress -p",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/mocha-style-no-op.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
