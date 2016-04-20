@@ -14,7 +14,7 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, '/build'),
+    path: path.join(__dirname, '../build'),
     publicPath: './',
     filename: 'app.js'
   },
@@ -61,11 +61,6 @@ module.exports = {
   },
   
   devtool: 'cheap-module-source-map',
-  
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './'
-  },
 
   assets: {
     stats: {

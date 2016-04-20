@@ -9,7 +9,7 @@ server.connection({
 
 server.register({
   register: WebpackPlugin,
-  options: 'configs/webpack-dev.config.js'
+  options: 'configs/webpack.config.js'
 }, error => {
   if (error) {
     console.log(error)
@@ -31,11 +31,11 @@ server.register({
 
 })
 
-// server.route({
-//   method: 'GET',
-//   path: '/',
-//   handler: (request, reply) => { return reply('Hello World') }
-// })
+server.route({
+  method: 'GET',
+  path: '/hello',
+  handler: (request, reply) => { return reply('Hello World') }
+})
 
 // server.start((err) => {
 //   if (error) {
