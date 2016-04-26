@@ -8,8 +8,10 @@
     "production": "npm run client && pm2 start src/js/api/server.js",
     "client": "webpack --display-error-details --progress -p --config configs/webpack.config.js",
     "start": "npm run production",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/mocha-style-no-op.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/mocha-style-no-op.js --recursive ./test/client",
+    "test:server": "lab ./test/api -t 100",
+    "test:client:watch": "npm run test:client -- --watch"
   },
   "keywords": [
     "nwjs",
@@ -35,7 +37,7 @@
     "bootstrap-sass": "^3.3.6",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
-    "concurrently": "^2.0.0",
+    "code": "^2.2.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.8.0",
     "eslint-plugin-react": "^5.0.1",
@@ -46,6 +48,7 @@
     "imports-loader": "^0.6.5",
     "jsdom": "^8.3.1",
     "json-loader": "^0.5.4",
+    "lab": "^10.3.1",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
     "react-addons-test-utils": "^15.0.1",
