@@ -10,7 +10,7 @@ import chaiJquery from 'chai-jquery'
 import jsdom from 'jsdom'
 import TestUtils from 'react-addons-test-utils'
 
-import reducers from '../src/js/reducers'
+import reducers from '../src/js/client/reducers'
 
 global.document = jsdom.jsdom('<!doctype html><html><head></head><body></body></html>')
 global.window = global.document.defaultView
