@@ -5,9 +5,8 @@
   "main": "http://localhost:8080",
   "scripts": {
     "dev": "node src/js/api/server.js",
-    "production": "npm run client && pm2 start src/js/api/server.js",
-    "client": "webpack --display-error-details --progress -p --config configs/webpack.config.js",
-    "start": "npm run production",
+    "production": "",
+    "start": "npm run dev",
     "test": "npm run test:client && npm run test:server",
     "test:client": "mocha --compilers js:babel-core/register --require ./test/test_helper.js ./test/mocha-style-no-op.js --recursive ./test/client",
     "test:server": "lab ./test/api -t 100",

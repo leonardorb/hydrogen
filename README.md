@@ -2,38 +2,32 @@
 
 [![Build Status](https://travis-ci.org/leonardorb/hydrogen.svg?branch=master)](https://travis-ci.org/leonardorb/hydrogen)
 
-An opinionated package for awesomeness. Standing in the shoulder of giants! Easily bootstrap your **React** projects.
+An awesome stack to easily bootstrap your ~~Isomorphic~~ **Universal** JavaScript projects.
 
+- [Hapi](http://hapijs.com/)
 - [Webpack](https://webpack.github.io/)
 - [React](https://facebook.github.io/react/)
 - [React Router](https://github.com/reactjs/react-router)
 - [Redux](http://redux.js.org/)
-- [NeDB](https://github.com/louischatriot/nedb)
 - [Bootstrap](http://getbootstrap.com/)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
 ## How to use
 
 1. Clone it
-2. `npm install` to install all dependencies
-3. `npm start`
-4. Go to `http://localhost:8080`; Enjoy!
+2. `$ npm install` to install all dependencies
+3. `$ npm start`
+4. Go to `http://localhost:3000`; Enjoy!
 5. Edit your files, save! Live reload! :metal:
+6. Start coding! That was fast :)
 
 ## Running tests
 
-`npm run test:watch`
+- `$ npm test` to run both client & server tests
 
-Edit your tests, save! Live test reload! :metal:
+- `$ npm test:client` to run tests only for the client. You can also do `$ npm test:client:watch` to run your tests on every test file change.
 
-## Use with `nwjs`
-
-It's very simple!
-
-1. [Download the latest SDK build](http://nwjs.io/)
-2. Unpack it in the root of the project
-3. Double-click in the `.app` / `.exe`; **BOOM**!
-
+- `$ npm test:server` to run tests only for the server
 
 ## Contributors
 
